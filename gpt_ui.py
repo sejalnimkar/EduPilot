@@ -124,7 +124,7 @@ if submitted and user_input:
         try:
             reply = model.get_recommendations_from_input(
                 user_input,
-                api_key="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"
+                api_key=HF_API_KEY
             )
         except Exception as e:
             st.error("⚠ Something went wrong while generating your recommendations.")
